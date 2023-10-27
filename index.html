@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <header class="header" id="header">
         <h2 class="flex-start">PARVES ARCHITECTS</h2>
 
-<nav>
+        <nav>
             <ul>
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#services">SERVICES</a></li>
@@ -21,11 +23,11 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
- 
+
     </header>
     <section id="home">
         <div class="home">
-            <h2 >Crafting Spaces for Life!</h2>
+            <h2>Crafting Spaces for Life!</h2>
             <button type="submit" class="btn-home" onclick="toggleForm()">Enquire Now</button>
         </div>
     </section>
@@ -39,118 +41,134 @@
         <button onclick="toggleForm()" class="cancel" style="width: 85%;">Cancel</button>
     </div>
 
-    
+
     <section id="services">
         <h1>SERVICES</h1>
         <div class="ser-dis">
             <div class="service-card">
-            <img src="service-01.jpg" alt="Residential" >
-            <h1>Residential Builders</h1>
-            <p>We offer builder services for residential complexes. We ensure that our clients are happy with our work.</p>
-            <button type="submit" class="btn-all" >Enquire Now</button>
-        
+                <img src="service-01.jpg" alt="Residential">
+                <h1>Residential Builders</h1>
+                <p>We offer builder services for residential complexes. We ensure that our clients are happy with our
+                    work.</p>
+                <button type="submit" class="btn-all">Enquire Now</button>
+
+            </div>
+            <div class="service-card">
+                <img src="service-02.jpg" alt="Building Construction">
+                <h1>Building Construction Services</h1>
+                <p>We offer building construction services as per your specifications within the suitable time and
+                    budget.</p>
+                <button onclick="openForm('Residential Builders','service-01.jpg')" class="btn-all">Enquire Now</button>
+            </div>
+            <div class="service-card">
+                <img src="service-03.jpg" alt="Interior Design">
+                <h1>Interior Design Services</h1>
+                <p>As per the taste, preference and budget of client we help them in organising their home the way they
+                    want.</p>
+                <button onclick="openForm('Interior Design Services','service-03.jpg')" class="btn-all">Enquire
+                    Now</button>
+            </div>
+            <div class="service-card">
+                <img src="service-04.jpg" alt="Landscaping Services">
+                <h1>Landscaping Services</h1>
+                <p>Designing and changing the outdoor space of your environment where you reside. Contact us today.</p>
+                <button onclick="openForm('Landscaping Services','service-04.jpg')" class="btn-all">Enquire Now</button>
+            </div>
+            <div class="service-card">
+                <img src="service-05.jpg" alt="Civil Services">
+                <h1>Civil Services</h1>
+                <p>We also provide various civil works at very affordable prices, contact us today for your works.</p>
+                <button onclick="openForm('Civil Services','service-05.jpg')" class="btn-all">Enquire Now</button>
+            </div>
+            <div class="service-card">
+                <img src="service-06.jpg" alt="Landscape Terrace">
+                <h1>Architects for Landscape Terrace</h1>
+                <p>We are actively engaged in rendering superior quality landscape terrace architect services to our
+                    clients.</p>
+                <button onclick="openForm('Architects for Landscape Terrace','service-06.jpg')" class="btn-all">Enquire
+                    Now</button>
+            </div>
+            <div class="service-card">
+                <img src="service-07.jpg" alt="Architects">
+                <h1>Architects</h1>
+                <p>We have a team of skilled, experienced & profeesional architects who will help you to design your
+                    dreams.</p>
+                <button onclick="openForm('Architects','service-07.jpg')" class="btn-all">Enquire Now</button>
+            </div>
+            <div class="service-card">
+                <img src="service-08.jpg" alt="Builders & Developers">
+                <h1>Builders & Developers</h1>
+                <p>We provide skilled and experienced Builders & Developers to assist you in your project with
+                    precision.</p>
+                <button onclick="openForm('Builders & Developers','service-08.jpg')" class="btn-all">Enquire
+                    Now</button>
+            </div>
+            <div class="service-card">
+                <img src="service-09.jpg" alt="Elevation Architectural">
+                <h1>Elevation Architectural Designer</h1>
+                <p>We have architectural designers to design the pattern you want so that you get what you want.</p>
+                <button onclick="openForm('Elevation Architectural Designer','service-09.jpg')" class="btn-all">Enquire
+                    Now</button>
+            </div>
+            <div class="service-card">
+                <img src="service-10.jpg" alt="Bungalow">
+                <h1>Architects for Bungalow</h1>
+                <p>Get the consultantion & render the responsibility to the best architects for designing splendid
+                    bungalows. </p>
+                <button onclick="openForm('Architects for Bungalow','service-10.jpg')" class="btn-all">Enquire
+                    Now</button>
+            </div>
         </div>
-        <div class="service-card">
-            <img src="service-02.jpg" alt="Building Construction" >
-            <h1>Building Construction Services</h1>
-            <p>We offer building construction services as per your specifications within the suitable time and budget.</p>
-            <button onclick="openForm('Residential Builders','service-01.jpg')" class="btn-all">Enquire Now</button>
-                </div>
-                <div class="service-card">
-            <img src="service-03.jpg" alt="Interior Design" >
-            <h1>Interior Design Services</h1>
-            <p>As per the taste, preference and budget of client we help them in organising their home the way they want.</p>
-            <button onclick="openForm('Interior Design Services','service-03.jpg')" class="btn-all">Enquire Now</button>
-        </div>
-        <div class="service-card">
-            <img src="service-04.jpg" alt="Landscaping Services" >
-            <h1>Landscaping Services</h1>
-            <p>Designing and changing the outdoor space of your environment where you reside. Contact us today.</p>
-            <button onclick="openForm('Landscaping Services','service-04.jpg')" class="btn-all">Enquire Now</button>
-        </div>
-        <div class="service-card">
-            <img src="service-05.jpg" alt="Civil Services" >
-            <h1>Civil Services</h1>
-            <p>We also provide various civil works at very affordable prices, contact us today for your works.</p>
-            <button onclick="openForm('Civil Services','service-05.jpg')" class="btn-all">Enquire Now</button>
-        </div>
-        <div class="service-card">
-            <img src="service-06.jpg" alt="Landscape Terrace" >
-            <h1>Architects for Landscape Terrace</h1>
-            <p>We are actively engaged in rendering superior quality landscape terrace architect services to our clients.</p>
-            <button onclick="openForm('Architects for Landscape Terrace','service-06.jpg')" class="btn-all">Enquire Now</button>
-        </div>
-        <div class="service-card">
-            <img src="service-07.jpg" alt="Architects" >
-            <h1>Architects</h1>
-            <p>We have a team of skilled, experienced & profeesional architects who will help you to design your dreams.</p>
-            <button onclick="openForm('Architects','service-07.jpg')" class="btn-all">Enquire Now</button>
-        </div>
-        <div class="service-card">
-            <img src="service-08.jpg" alt="Builders & Developers" >
-            <h1>Builders & Developers</h1>
-            <p>We provide skilled and experienced Builders & Developers to assist you in your project with precision.</p>
-            <button onclick="openForm('Builders & Developers','service-08.jpg')" class="btn-all">Enquire Now</button>
-        </div>
-        <div class="service-card">
-            <img src="service-09.jpg" alt="Elevation Architectural" >
-            <h1>Elevation Architectural Designer</h1>
-            <p>We have architectural designers to design the pattern you want so that you get what you want.</p>
-            <button onclick="openForm('Elevation Architectural Designer','service-09.jpg')" class="btn-all">Enquire Now</button>
-        </div>
-        <div class="service-card">
-            <img src="service-10.jpg" alt="Bungalow" >
-            <h1>Architects for Bungalow</h1>
-            <p>Get the consultantion & render the responsibility to the best architects for designing splendid bungalows. </p>
-            <button onclick="openForm('Architects for Bungalow','service-10.jpg')" class="btn-all">Enquire Now</button>
-        </div>
-    </div>
     </section>
     <div id="floating-form" class="floating-form-container">
         <img id="form-image" src="" alt="Service Icon">
         <h1 id="form-title"></h1>
         <input type="text" placeholder="Name" required>
         <input type="tel" placeholder="Phone Number" required>
-        <button onclick="submitForm()"class="submit">Submit</button>
+        <button onclick="submitForm()" class="submit">Submit</button>
         <button onclick="closeForm()" class="red">Cancel</button>
     </div>
 
     <section class="aboutus" id="aboutus">
         <h1>ABOUT US</h1>
         <img src="logo-new.png" alt="Interior Image">
-        <p>We, Parves Architects, situated at KR Nagar, Kovilpatti, Tamil Nadu believe, good design is produced from careful study and research, combined with technical knowledge and artistic judgment. It's our aim to create spaces where people & activities thrive. Our team is capable of handling all the projects from the initial concept till the actual completion of the whole project.
+        <p>We, Parves Architects, situated at KR Nagar, Kovilpatti, Tamil Nadu believe, good design is produced from
+            careful study and research, combined with technical knowledge and artistic judgment. It's our aim to create
+            spaces where people & activities thrive. Our team is capable of handling all the projects from the initial
+            concept till the actual completion of the whole project.
         </p>
     </section>
     <section id="whyus">
         <h1>WHY US</h1><br>
         <div class="whyus">
-            
+
             <div class="whyus-card">
                 <img src="target.png" alt="Aim The Point"><br>
                 <h4>AIM</h4>
-                <p>It's our aim to create spaces where people & activities thrive where customers get utmost satisfaction.                </p>
+                <p>It's our aim to create spaces where people & activities thrive where customers get utmost
+                    satisfaction. </p>
             </div>
             <div class="whyus-card">
                 <img src="engi.png" alt="Aim The Point"><br>
                 <h4>TEAM</h4><br>
-                <p>Our team is capable in handling all the projects from the initial concept till the actual completion throughout.</p>
+                <p>Our team is capable in handling all the projects from the initial concept till the actual completion
+                    throughout.</p>
             </div>
             <div class="whyus-card">
                 <img src="home.png" alt="Aim The Point"><br>
                 <h4>DESIGN</h4><br>
-                <p>Our firm strives to create design that inspires, approaching each project, regardless of the size & scale.</p>
+                <p>Our firm strives to create design that inspires, approaching each project, regardless of the size &
+                    scale.</p>
             </div>
         </div>
     </section>
     <section id="videos" class="videos">
-<h1> VIDEOS</h1><br>
+        <h1> VIDEOS</h1><br>
 
-        <div >
-            <iframe src="https://www.youtube.com/embed/xz8DGp9SDb4" frameborder="2"
-                allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/mfYj9mJh8Zk" frameborder="2"
-                allowfullscreen ></iframe>
-       </div>
+        <div>
+            <iframe src="https://www.youtube.com/embed/xz8DGp9SDb4" frameborder="2" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/mfYj9mJh8Zk" frameborder="2" allowfullscreen></iframe>
+        </div>
     </section>
     <section class="contact" id="contact">
         <h1>CONTACT US</h1><br>
@@ -177,6 +195,7 @@
             </div>
         </div>
     </section>
-    
+
 </body>
+
 </html>
